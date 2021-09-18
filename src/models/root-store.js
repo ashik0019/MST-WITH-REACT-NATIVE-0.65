@@ -11,17 +11,12 @@ export const RootStore = types
   })
   .actions((self) => ({
      addTodo(todo) {
-         let todo1 = {
-             id: 12,
-             name: 'sadaf'
-         }
-      self.todos.put(todo1);
-      self.selectedTodoId = todo.id.toString();
+        
+      self.todos.put(todo);
+      //self.selectedTodoId = todo1.id.toString();
+      //alert('done')
     },
    
-    removeTodo(id) {
-      self.todos.delete(id);
-    },
     
   }))
   .views((self) => ({
